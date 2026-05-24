@@ -33,7 +33,8 @@ public class SelectVehiculo {
 				int anio = rs.getInt("anio");
 				double precio = rs.getDouble("precio");
 				String color = rs.getString("color");
-				boolean disponible = rs.getBoolean("disponible"); 
+				boolean disponible = rs.getBoolean("disponible");
+				int kilometraje = rs.getInt("kilometraje");
 				
 				LOGGER.info("\nPlaca: "+placa
 						+"\tMarca: "+marca
@@ -41,7 +42,8 @@ public class SelectVehiculo {
 						+"\tAño: "+anio
 						+"\tPrecio: "+precio
 						+"\tColor: "+color
-						+"\tDosponible: "+disponible);
+						+"\tDosponible: "+disponible
+						+"\tKilometraje: "+kilometraje);
 			}
 			
 		} catch (Exception e) {

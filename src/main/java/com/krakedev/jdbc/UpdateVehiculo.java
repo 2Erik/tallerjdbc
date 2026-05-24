@@ -16,7 +16,7 @@ public class UpdateVehiculo {
 		PreparedStatement ps = null;
 		String sql = """
 				UPDATE vehiculos
-				SET marca=?, modelo=?, anio=?, precio=?, color=?, disponible=?
+				SET marca=?, modelo=?, anio=?, precio=?, color=?, disponible=?, kilometraje=?
 				WHERE placa=?
 				""";
 
@@ -30,7 +30,8 @@ public class UpdateVehiculo {
 			ps.setDouble(4, 18000);
 			ps.setString(5, "NEGRO");
 			ps.setBoolean(6, true);
-			ps.setString(7, "PDD-7485");
+			ps.setInt(7, 55555);
+			ps.setString(8, "PDD-7485");
 			
 			int filas = ps.executeUpdate();
 			LOGGER.info("Filas actualizadas: "+filas);

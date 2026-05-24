@@ -23,7 +23,7 @@ public class DeleteVehiculo {
 			con = Conexion.getConnection();
 			ps = con.prepareStatement(sql);
 			
-			ps.setString(1, "PBD-4789");
+			ps.setString(1, "PDD-7485");
 			
 			int filas = ps.executeUpdate();
 			LOGGER.info("Filas eliminadas: "+filas);
