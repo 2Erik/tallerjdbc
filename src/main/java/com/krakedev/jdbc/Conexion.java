@@ -13,7 +13,7 @@ public class Conexion {
 	private static final String USER = "postgres";
 	private static final String PASSWORD = "erikRelunico";
 	
-	public Connection getConnection() throws Exception{
+	public static Connection getConnection() throws Exception{
 		Connection con = null;
 		
 		try {
